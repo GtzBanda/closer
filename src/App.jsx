@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./App.css";
 
+const logoPath = `${import.meta.env.BASE_URL}closer-logo.png`;
+
 const resources = [
   {
     name: "El Pasoans Fighting Hunger Food Bank",
@@ -101,7 +103,7 @@ function App() {
       <nav className="navbar">
         <div className="nav-inner">
           <a href="#" className="logo">
-            <img src="/closer-logo.png" alt="Closer logo" />
+            <img src={logoPath} alt="Closer logo" />
             <span>Closer</span>
           </a>
 
@@ -150,7 +152,7 @@ function App() {
         </div>
 
         <div className="hero-logo">
-          <img src="/closer-logo.png" alt="" />
+          <img src={logoPath} alt="" />
         </div>
       </section>
 
@@ -325,7 +327,7 @@ function App() {
         <div className="footer-inner">
 
           <div className="footer-logo">
-            <img src="/closer-logo.png" alt="Closer logo" />
+            <img src={logoPath} alt="Closer logo" />
             <span>Closer</span>
           </div>
 
